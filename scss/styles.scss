@@ -1,0 +1,21 @@
+@import "variables";
+@import "root";
+@import "reset";
+@import "mixins";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--jp-primary);
+  display: grid;
+  place-content: center;
+  position: relative;
+  #logo {
+    width: 400px;
+    z-index: 10;
+  }
+  #bg {
+    position: absolute;
+    bottom: 0;
+  }
+}
